@@ -7,23 +7,105 @@
     <title>Sobre mim</title>
 </head>
 
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial';
+        background-color: rgb(230, 127, 127);
+        color: black;
+    }
+
+    .container {
+        display: flex;
+        background-color: black;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        color: white;
+        align-items: center;
+        padding: 40px;
+        width: 100%;
+    }
+
+    .minhaFoto {
+        width: 40%; /* controla o tamanho */
+        border-radius: 20px; /* borda arredondada (ou 50% pra círculo) */
+        margin: 70px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: center;
+        background: white;
+        width: 90%;
+        margin: 15px;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+    h2 {
+        margin-top: 0;
+        color: black;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #1f1e1e;
+        color: white;
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+
 <body>
+
     <header>
-
-    </header>
-    <main>
-        <h1>Sobre mim</h1>
-        <p>Esse site é sobre mim, meu nome é Mariah</p>
-        <div>
-            <div class="container">
-                
-
-            </div>
+        <div class="container">
+            <h1>Mariah Mafra Soares</h1>
         </div>
+    </header>
+
+    <main>
+        <div>
+            <img src="minhaFoto.jpg" alt="minha foto" class="minhaFoto">
+        </div>
+
+        <div class="card">
+            <h2>Sobre Mim</h2>
+            <p>Oi! Eu sou a Mariah, estou começando na programação e criando meu primeiro site.</p>
+        </div>
+
+        <div class="card">
+            <h2>Hobbies</h2>
+            <p>Gosto de tecnologia, jogos, aprender programação e explorar coisas novas.</p>
+        </div>
+
+        <div class="card">
+            <h2>Objetivos</h2>
+            <p>Quero conseguir um estágio na área de tecnologia e evoluir como desenvolvedora.</p>
+        </div>
+
     </main>
+
     <footer>
-        <p>&copy; 2026 Mariah. Todos os direitos reservados.</p>
+        <p>© 2026 - Todos os direitos reservados</p>
     </footer>
+
 </body>
 
 </html>
