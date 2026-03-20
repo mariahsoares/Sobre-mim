@@ -7,34 +7,60 @@
     <title>Sobre mim</title>
 </head>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
     body {
         margin: 0;
-        font-family: 'Arial';
-        background-color: rgb(230, 127, 127);
+        font-family: 'var(--font-body)';
+        background-color: rgb(45, 0, 97);
         color: black;
     }
-
+    h2,h3, h4 {
+        font-family: 'var(--font-heading)';
+    }
     .container {
         display: flex;
-        background-color: black;
+        background-color: rgb(21, 0, 46);
         width: 100%;
     }
 
     h1 {
         text-align: center;
         font-size: 60px;
-        color: white;
+        color: rgb(174, 103, 255);
         align-items: center;
         padding: 40px;
         width: 100%;
     }
 
+    .container2 {
+        display: flex;
+        /* faz ficar lado a lado */
+        align-items: center;
+        /* alinha verticalmente */
+    }
+
     .minhaFoto {
-        width: 40%; /* controla o tamanho */
-        border-radius: 20px; /* borda arredondada (ou 50% pra círculo) */
+        width: 30%;
+        /* controla o tamanho */
+        border-radius: 20px;
+        /* borda arredondada (ou 50% pra círculo) */
         margin: 70px;
     }
+
+    .texto {
+        color: white;
+        font-size: 30px;
+        max-width: none;
+        /* remove limite */
+        width: 100%;
+        /* ocupa o espaço disponível */
+        padding: 80px;
+    }
+
 
     main {
         display: flex;
@@ -43,7 +69,7 @@
 
     .card {
         align-items: center;
-        background: white;
+        background: rgb(233, 233, 233);
         width: 90%;
         margin: 15px;
         padding: 40px;
@@ -58,14 +84,49 @@
 
     h2 {
         margin-top: 0;
-        color: black;
+        color: rgb(71, 0, 153);
+        font-size: 30px;
+    }
+
+    .paragrafo {
+        font-size: 20px;
+        color: rgb(21, 0, 46);
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        color: rgb(174, 103, 255);
+        align-items: center;
+        width: 100%;
+    }
+
+    .contato {
+        margin-top: 20px;
+    }
+
+    .contato a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .contato a:hover {
+        text-decoration: underline;
+    }
+
+    h4 {
+        font-size: 20px;
+        margin: 40px;
+        color: white;
     }
 
     footer {
         text-align: center;
         padding: 15px;
-        background: #1f1e1e;
-        color: white;
+        background: rgb(21, 0, 46);
+        color: rgb(174, 103, 255);
         margin-top: 20px;
     }
 </style>
@@ -81,25 +142,62 @@
     </header>
 
     <main>
-        <div>
+        <div class="container2">
             <img src="minhaFoto.jpg" alt="minha foto" class="minhaFoto">
+            <p class="texto">
+                Olá! Eu sou a Mariah <br>
+                Estudante de Engenharia de Software <br>
+                Eu estudei na escola SESI e nele fiz um curso técnico do SESI/SENAI de Anásile e desenvolvimento de
+                sistemas integrado com o meu ensino médio, foi nele onde eu tive o meu primeiro contato com a
+                programação, principalmente com o desenvolvimento web e eu simplesmente gostei muito. <br>
+                Começei a gostar cada vez mais de tecnologia e de estudar coisas novas, busquei por esse curso
+                justamente por isso e acredito que se eu não tivesse feito esse curso técnico no SESI eu teria escolhido
+                ir para outra área, mas eu fico muito feliz por ter escolhido a área da tecnologia</h3>
+            </p>
         </div>
 
         <div class="card">
             <h2>Sobre Mim</h2>
-            <p>Oi! Eu sou a Mariah, estou começando na programação e criando meu primeiro site.</p>
+            <p class="paragrafo">Atualmente estou no primeiro período de Engenharia de Software e iniciando minha
+                jornada na programação. Tenho interesse em desenvolvimento de sistemas e estou sempre buscando aprender
+                coisas novas.</p>
         </div>
 
         <div class="card">
-            <h2>Hobbies</h2>
-            <p>Gosto de tecnologia, jogos, aprender programação e explorar coisas novas.</p>
+            <h2>Habilidades</h2>
+            <p class="paragrafo">HTML (básico),
+                CSS (básico),
+                Lógica de programação,
+                javascript (básico),
+                Python (básico),
+                PHP (básico),
+                C# (básico),
+                Git/GitHub (básico). </p>
+        </div>
+
+        <div class="card">
+            <h2>Atualmente</h2>
+            <p class="paragrafo">Atualmente eu estou fazendo alguns projetos pessoais para aumentar o meu portifólio e a
+                minhas habilidades em programação, estou consentrando meus estudos principalmente em html, css,
+                javascript (Desenvolvimento web) e C#,</p>
         </div>
 
         <div class="card">
             <h2>Objetivos</h2>
-            <p>Quero conseguir um estágio na área de tecnologia e evoluir como desenvolvedora.</p>
+            <p class="paragrafo">Quero ter um portifólio bem robusto, com vários projetos diferentes, parte deles que
+                resolvem proplemas reais e a outra parte quero me divertir fazendo sites e aplicativos bonitos,
+                funcionais e uteis (Adoro a parte artística e criativa, acho extremamente facinante), além disso eu
+                quero conseguir um estágio na área da tecnologia para poder evoluir como desenvolvedora.</p>
         </div>
 
+        <div class="contato">
+            <h3>Informações adicionais</h3>
+            <h4>
+                Email: mariahmafrasoares@gmail.com <br>
+                Meu: <a href="https://www.linkedin.com/in/mariah-mafra-soares-4b8b1a383/" target="_blank">Linkedin</a><br> 
+                Meu: <a href="https://github.com/mariahsoares" target="_blank">GitHub</a>
+            </h4>
+        </div>
     </main>
 
     <footer>
