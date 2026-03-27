@@ -5,140 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mim</title>
-</head>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-    body {
-        margin: 0;
-        font-family: 'var(--font-body)';
-        background-color: rgb(45, 0, 97);
-        color: black;
-    }
-    h2,h3, h4 {
-        font-family: 'var(--font-heading)';
-    }
-    .container {
-        display: flex;
-        background-color: rgb(21, 0, 46);
-        width: 100%;
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 60px;
-        color: rgb(174, 103, 255);
-        align-items: center;
-        padding: 40px;
-        width: 100%;
-    }
-
-    .container2 {
-        display: flex;
-        /* faz ficar lado a lado */
-        align-items: center;
-        /* alinha verticalmente */
-    }
-
-    .minhaFoto {
-        width: 30%;
-        /* controla o tamanho */
-        border-radius: 20px;
-        /* borda arredondada (ou 50% pra círculo) */
-        margin: 70px;
-    }
-
-    .texto {
-        color: white;
-        font-size: 30px;
-        max-width: none;
-        /* remove limite */
-        width: 100%;
-        /* ocupa o espaço disponível */
-        padding: 80px;
-    }
-
-
-    main {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card {
-        align-items: center;
-        background: rgb(233, 233, 233);
-        width: 90%;
-        margin: 15px;
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-    }
-
-    .card:hover {
-        transform: scale(1.03);
-    }
-
-    h2 {
-        margin-top: 0;
-        color: rgb(71, 0, 153);
-        font-size: 30px;
-    }
-
-    .paragrafo {
-        font-size: 20px;
-        color: rgb(21, 0, 46);
-    }
-
-    h3 {
-        text-align: center;
-        font-size: 40px;
-        color: rgb(174, 103, 255);
-        align-items: center;
-        width: 100%;
-    }
-
-    .contato {
-        margin-top: 20px;
-    }
-
-    .contato a {
-        margin-right: 20px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-    }
-
-    .contato a:hover {
-        text-decoration: underline;
-    }
-
-    h4 {
-        font-size: 20px;
-        margin: 40px;
-        color: white;
-    }
-
-    footer {
-        text-align: center;
-        padding: 15px;
-        background: rgb(21, 0, 46);
-        color: rgb(174, 103, 255);
-        margin-top: 20px;
-    }
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Mariah Mafra Soares</h1>
+    <header class="cabecalho">
+        <div class="logo-titulo">
+            <img src="logo.png" alt="logo" class="logo">
         </div>
+
+        <h1>Mariah Mafra Soares</h1>
+
+        <nav class="menu"> <!-- to usando o # por que ainda não temos mais de uma pagina -->
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
     </header>
 
     <main>
